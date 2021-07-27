@@ -19,7 +19,6 @@ html {
   
   a {
     color: #161616;
-    text-decoration: none;
   }
 
   .visually-hidden {
@@ -28,10 +27,6 @@ html {
 
   .card-category {
     color: var(--color-primary);
-  }
-
-  .section-header {
-    text-align: var(--section-header-align);
   }
 
   .section-tagline {
@@ -54,8 +49,4 @@ html {
     --font-size-xx-large: 4.8rem;
     --font-weight-regular: 400;
     --font-weight-bold: 700;
-    --line-height-small: 1.2;
-    --line-height-base: 1.5;
-    --line-height-big: 1.8;
-    --section-header-align: center;
   }
