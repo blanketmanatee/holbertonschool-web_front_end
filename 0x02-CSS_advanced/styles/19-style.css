@@ -139,7 +139,7 @@ html {
     color: var(--text-color);
   }
 
-  ul.footer {
+  .footer ul {
     text-align: right;
   }
   :root {
