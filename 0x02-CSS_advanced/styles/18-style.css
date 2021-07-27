@@ -87,10 +87,13 @@ html {
 
   .navbar-menu{
     float: right;
+  }
+
+  .nav {
     margin: 0;
     padding: 0;
     text-align: center;
-
+    list-style-type: none;
   }
 
   .nav .nav-item {
