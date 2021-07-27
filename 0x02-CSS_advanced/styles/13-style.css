@@ -16,7 +16,7 @@ html {
     font-weight: var(--font-weight-bold);
   }
   
-  a {
+  a:link {
     color: #161616;
     text-decoration: none;
   }
@@ -32,7 +32,7 @@ html {
   a:active {
     background-color: var(--color-light-grey);
   }
-  
+
   .visually-hidden {
     display: none;
   }
