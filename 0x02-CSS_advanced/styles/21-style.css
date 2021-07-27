@@ -123,14 +123,10 @@ html {
 
   .col-1-3 {
     width: 33.33%;
-    float: left;
-    padding: 0.5rem;
   }
 
   .col-1-2 {
     width: 50%;
-    float: left;
-    padding: 0.5rem;
   }
 
   .footer-copyright {
@@ -153,7 +149,7 @@ html {
     float: left;
     padding: .5rem;
   }
-  
+
   :root {
     --color-primary: #D73953;
     --color-black: #090909;
