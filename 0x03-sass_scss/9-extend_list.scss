@@ -5,7 +5,7 @@
 
 .success {
     color: #00FF00;
-    @extend:.info;
+    @extend: .info;
 }
 
 .warning {
