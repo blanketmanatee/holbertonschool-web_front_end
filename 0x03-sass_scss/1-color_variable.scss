@@ -1,4 +1,11 @@
 /* assigns #3D3D3D to body and p */
 
-$body: #3D3D3D;
-$p: #3D3D3D;
+$variable: #3D3D3D;
+
+body {
+    color: $variable;
+}
+
+p {
+    color: $variable;
+}
