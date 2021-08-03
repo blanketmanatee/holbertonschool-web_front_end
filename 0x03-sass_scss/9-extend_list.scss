@@ -1,0 +1,14 @@
+/* font size 12px to .info text color #00FF00 to .success/.warning and extend styles of class .info */ 
+.info {
+    font-size: 12px;
+}
+
+.success {
+    color: #00FF00;
+    @extend:.info;
+}
+
+.warning {
+    color: #00FF00;
+    @extend: .info;
+}

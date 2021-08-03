@@ -1,0 +1,7 @@
+/* text color #3D3D3D inside body tags text color #FF0000 class .red inside body. use nestd declarations */ 
+body {
+    color: #3d3d3d;
+    .red {
+        color: #FF0000;
+    }
+}
