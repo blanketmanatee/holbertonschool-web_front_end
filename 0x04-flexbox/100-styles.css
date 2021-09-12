@@ -566,6 +566,19 @@
       min-width: 20%;
     }
 
+    .post img {
+      width: 100%;
+      height: auto;
+    }
+
+    .post-content img-caption {
+      margin: 1rem 0;
+      padding: 0 .5rem;
+      font-size: var(--font-size-small);
+      color: var(--color-grey);
+      text-align: center;
+    }
+
     /* Post Meta
     ============================= */
 
@@ -610,15 +623,4 @@
       content: '';
     }
 
-    .post img {
-      width: 100%;
-      height: auto;
-    }
-
-    .post-content img-caption {
-      margin: 1rem 0;
-      padding: 0 .5rem;
-      font-size: var(--font-size-small);
-      color: var(--color-grey);
-      text-align: center;
-    }
+    
