@@ -2,6 +2,11 @@
 <html lang="en" dir="ltr">
 
     <head>
+        <style>
+            .loading {
+                opacity: 0.2;
+            }
+        </style>
         <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
 crossorigin="anonymous"></script>
 <script
@@ -51,6 +56,9 @@ function queryWikipedia(search, offset=0) {
         },
         type: "GET",
         dataType: "json",
+        beforeSend: function(xhr) {
+            displayLoading(true);
+        }
     })
     .done(function(json) {
         $("#results").replaceWith($("<ul/>", {id: "results"}));
@@ -84,6 +92,13 @@ function buildPagination (numberOfItems, itemsPerPage, currentOffset) {
 
          $("#pagination").append(item);
         }
+    }
+
+    function displayLoading(loading) {
+        loading ?
+        $("ul:nth-of-type(1)").wrap($("<div/>", {class: "loading" })) :
+        $("ul:nth-of-type(1)").unwrap($("</div>"))
+
     }
 $(document).ready(function() {
     createSearchForm();
