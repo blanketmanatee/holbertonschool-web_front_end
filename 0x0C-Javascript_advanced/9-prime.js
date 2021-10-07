@@ -26,4 +26,4 @@ countPrimeNumbers();
 let end = performance.now();
 
 let final = end - start;
-console.log('Execution time of printing countPrimeNumbers was ${final} milliseconds.');
+console.log('Execution time of calculating prime numbers 100 times was' + ${final} + 'milliseconds.');
