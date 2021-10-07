@@ -16,9 +16,9 @@ function processOrder(itemName, callbackPayment, callbackError) {
 
     if (itemName in stock) {
         if (stock[itemName] > 0) {
-            processPayment(itemName);
+            callbackPayment(itemName);
         } else {
-            processError(itemName);
+            callbackError(itemName);
         }
     }
     document.addEventListener("DOMContentLoaded", function(event){
