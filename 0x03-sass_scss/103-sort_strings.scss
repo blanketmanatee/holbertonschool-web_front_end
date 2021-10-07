@@ -22,7 +22,7 @@ $list_to_sort: john anna zoe kim felicia carrie;
         @function swap($list_to_sort, $index-a, $index-b) {
             @if abs($index-a) > length($list_to_sort) or
             abs($index-b) > length($list_to_sort) {
-                @return list;
+                @return list_to_sort;
             }
             $temp: nth($list_to_sort, $index-a);
             $list_to_sort: set-nth($list_to_sort, $index-a, nth($list_to_sort, $index-b));
@@ -47,8 +47,9 @@ $list_to_sort: john anna zoe kim felicia carrie;
                         $large: append($large, $item, list-separator($list_to_sort));
                     }
                 }
-                @return join(join(quick-sort($list, $order), $equal), quick-sort($large, $order));
+                @return join(join(quick-sort($list_to_sort, $order), $equal), quick-sort($large, $order));
             }
-                @debug $list_to_sort;
+                @return $list_to_sort;
         }
+        @debug $list_to_sort;
         
